@@ -69,5 +69,5 @@ my_Work["val_loss"].plot(color="g")
 plt.legend()
 plt.title('val_loss : ' + str(my_Work['val_loss'][-1:].values[0]), pad=30)
 #loss, mae, mse
-plt.savefig(f"./{i}.png")
+plt.savefig(f"./graph/{i}.png")
 plt.show()
