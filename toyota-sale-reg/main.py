@@ -58,12 +58,6 @@ epochs= 10000 , verbose=1, validation_data=(X_test, y_test),callbacks=[early_sto
 
 my_Work = pd.DataFrame(history.history)
 
-# import requests, json
-
-# WEBHOOK_URL2='https://hooks.slack.com/services/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'
-# payload = {'channel' : '#일반', 'username' : 'like', 'text' : str(my_Work['val_loss'][-1:].values[0])}
-# requests.post(WEBHOOK_URL2, json.dumps(payload))
-
 my_Work["loss"].plot(color="r")
 my_Work["val_loss"].plot(color="g")
 plt.legend()
